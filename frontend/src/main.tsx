@@ -20,8 +20,8 @@ createRoot(document.getElementById("root")!).render(
           <Route index element={<Navigate to="/login" replace />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route path="dashboard" element={<Dashboard />} />
         </Route>
+        <Route path="/app/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   </StrictMode>

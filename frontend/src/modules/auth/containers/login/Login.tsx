@@ -29,7 +29,7 @@ function Login() {
       LocalStorage.setItem("token", response);
 
       setIsLoading(false);
-      navigate("/dashboard");
+      navigate("/app/dashboard");
     } catch (error: any) {
       setError("email", {
         type: "manual",
