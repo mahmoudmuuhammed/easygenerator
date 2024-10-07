@@ -2,7 +2,7 @@ import axios from "axios";
 import { JsonResponse } from "../../../shared/types/response";
 import { User } from "../models/users";
 
-export const profile = async () => {
+export const profile = async (token: string) => {
   try {
     const response = await axios.get<JsonResponse<User>>(
       "http://localhost:8000/api/v1/profile",
@@ -10,6 +10,7 @@ export const profile = async () => {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       }
     );
