@@ -1,0 +1,37 @@
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.container__form, .container__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 500px;
+  flex: 1 0 500px;
+  max-width: 100%;
+  padding: 4vmax 2.5vmax;
+  min-height: 100vh;
+}
+
+.container__wrapper {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
